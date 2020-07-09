@@ -100,5 +100,21 @@ regionids VARCHAR(50), search_times INT UNSIGNED, description CHAR(30), PRIMARY 
 Query OK, 0 rows affected (0.02 sec)
 ```
 Use above sql to create the table and add the csv, able to query in gcloud terminal but still get index of range error on running server. And try later get below error(~think is django not correctly resolved as django -v not show django: command not found but already satisfied when try to install~, use ```django-admin version```)
-    __CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+
+&nbsp;
+&nbsp;
+####    __CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
 pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')__
+#####   Solution: 
+Seems the connection to Google cloud has issue. Some posts mentioned is change time out value. but tried to refresh(maybe restart) gcloud works but still get index out of range issue.
+
+
+&nbsp;
+&nbsp;
+####    __CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+1.unsovled import for vscode 2.Python relative import issue cannot resolved
+#####   Solution: 
+Reads several posts but seems not works. I found for this one no need to use relative as models.py view.py and test.py in same folder so tried remove the parent folder. The warning gone but still get index of range issue.
+[link1 for vscode import](https://stackoverflow.com/questions/53939751/pylint-unresolved-import-error-in-visual-studio-code)
+[link2 for python relative](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3)
+[link3 for python relative](https://stackoverflow.com/questions/279237/import-a-module-from-a-relative-path/6098238#6098238)
