@@ -23,7 +23,7 @@ GEM
     colorator (1.1.0)
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     devlopr (0.4.5)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.13.0)
