@@ -4,7 +4,7 @@ author: Chaz Lee
 title: SQL Basic Knowlege and Questions
 date: 2020-08-21T11:47:20.613Z
 thumbnail: /assets/img/posts/hello.jpg
-categories: SQL summary
+category: SQL
 summary: knowledge summary
 ---
 #####  __Tutorial of SQL with practices English__
