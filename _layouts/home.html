@@ -9,6 +9,71 @@ layout: default
     });
   });
 </script>
+
+<!-- <script type="text/javascript">
+  window.onload=function(){
+        var v1=document.getElementById('div1');
+        var v2=document.getElementById('div2');
+        var v3=document.getElementById('div3');
+
+        v3.innerHTML= v2.innerHTML;//将v2容器里面的图片插入到v3容器里面  使其空白区域被遮住。
+        function fun(){
+          if(v1.scrollLeft<=0){
+              v1.scrollLeft=600;
+          }else{
+              v1.scrollLeft--;
+          }
+      }
+
+      var fun1=setInterval(fun,10);
+
+      v1.onmouseover = function() {//鼠标经过时  清除定时器  停止图片的滚动
+              clearInterval(fun1)
+          };
+      v1.onmouseout = function() {//鼠标离开后  继续滚动图片
+              fun1 = setInterval(fun, 10)
+          };
+  }
+
+</script> -->
+
+<!-- <title>无缝滚动效果</title> -->
+<!-- <style type="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+   }
+   #carousel ul{
+    list-style: none;
+    /*animation:动画名称 动画时间 运动曲线  何时开始  播放次数  是否反方向;*/
+    -webkit-animation: move 5s linear infinite;
+    -o-animation: move 5s linear infinite;
+    animation: move 5s linear infinite;
+    width:200%;
+  }
+  #carousel .carousel-wrap li{
+    float: left;
+    overflow: auto;
+  }
+  #carousel .carousel-wrap li img{
+    width: 126px;
+  }
+  #carousel .carousel-wrap div{
+    width:882px;
+    margin:100px auto;
+    border: 1px solid red;
+    overflow: hidden;
+  }
+  @keyframes move{
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-882px);
+    }
+  }
+</style> -->
+
     <div class="jumbotron" style="text-align: center;">
       <img class="author-profile-img" src="/assets/img/profile.png" />
       <p class="jumbotron-heading">Hi, I am {{site.author}} !</p>
@@ -17,67 +82,117 @@ layout: default
          {%- include github_fork_button.html -%}
     </div>
 
+    <div class="col-lg-12">  
+      <div id="carousel"> 
+        <div class="carousel-wrap"> 
+          <h1 class="card-title" style="text-align: center;">Skills</h1> 
+              <ul id="carousel-slider" class="clearfix" style="width: 2700px;">        
+                <li style="margin-left: -43.89px;">
+                  <a href="/blog/categories/jekyll">
+                    <img src="/assets/img/skills/jekyll.png" alt="learn jekyll" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/docker">
+                    <img src="/assets/img/skills/docker.png" alt="learn docker" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="/blog/categories/javascript">
+                      <img data-src="/assets/img/skills/js.png" alt="learn javascript" class=" lazyloaded" src="/assets/img/skills/js.png">
+                    </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/wordpress"><img src="/assets/img/skills/wp.png" alt="learn wordpress" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/nodejs">
+                    <img src="/assets/img/skills/node.png" alt="learn node" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/gatsby">
+                    <img src="/assets/img/skills/gatsby-logo.png" alt="learn gatsby" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="/blog/categories/react">
+                      <img src="/assets/img/skills/react.png" alt="learn react" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li>
+                  <li style="margin-left: 0px;">
+                    <a href="/blog/categories/mongodb">
+                      <img src="/assets/img/skills/mongodb.png" alt="learn mongodb" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li>
+                  <li style="margin-left: 0px;">
+                    <a href="/blog/categories/laravel">
+                      <img src="/assets/img/skills/laravel.png" alt="learn laravel" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li> 
+                </ul> 
+        </div> 
+      </div>
+    </div> 
+
     <!-- <div class="col-lg-12">  
       <div id="carousel"> 
         <div class="carousel-wrap"> 
           <h1 class="card-title" style="text-align: center;">Skills</h1> 
-          <ul id="carousel-slider" class="clearfix" style="width: 2700px;">        
-             <li style="margin-left: -43.89px;">
-              <a href="/blog/categories/jekyll">
-                <img src="/assets/img/skills/jekyll.png" alt="learn jekyll" class=" ls-is-cached lazyloaded">
-              </a>
-              <a href="/blog/categories/jekyll">
-                <img src="/assets/img/skills/jekyll.png" alt="learn jekyll" class=" ls-is-cached lazyloaded">
-              </a>
-            </li>
-            <li style="margin-left: 0px;">
-              <a href="/blog/categories/docker">
-                <img src="/assets/img/skills/docker.png" alt="learn docker" class=" ls-is-cached lazyloaded">
-              </a>
-              <a href="/blog/categories/docker">
-                <img src="/assets/img/skills/docker.png" alt="learn docker" class=" ls-is-cached lazyloaded">
-              </a>
-            </li>
-            <li style="margin-left: 0px;">
-                <a href="/blog/categories/javascript">
-                  <img data-src="/assets/img/skills/js.png" alt="learn javascript" class=" lazyloaded" src="/assets/img/skills/js.png">
-                </a>
-                <img data-src="/assets/img/skills/js.png" alt="learn javascript" class=" lazyloaded" src="/assets/img/skills/js.png">
-            </li>
-            <li style="margin-left: 0px;">
-              <a href="/blog/categories/wordpress"><img src="/assets/img/skills/wp.png" alt="learn wordpress" class=" ls-is-cached lazyloaded">
-              </a>
-            </li>
-            <li style="margin-left: 0px;">
-              <a href="/blog/categories/nodejs">
-                <img src="/assets/img/skills/node.png" alt="learn node" class=" ls-is-cached lazyloaded">
-              </a>
-            </li>
-            <li style="margin-left: 0px;">
-              <a href="/blog/categories/gatsby">
-                <img src="/assets/img/skills/gatsby-logo.png" alt="learn gatsby" class=" ls-is-cached lazyloaded">
-              </a>
-            </li>
-            <li style="margin-left: 0px;">
-                <a href="/blog/categories/react">
-                  <img src="/assets/img/skills/react.png" alt="learn react" class=" ls-is-cached lazyloaded">
-                </a>
-              </li>
-              <li style="margin-left: 0px;">
-                <a href="/blog/categories/mongodb">
-                  <img src="/assets/img/skills/mongodb.png" alt="learn mongodb" class=" ls-is-cached lazyloaded">
-                </a>
-              </li>
-              <li style="margin-left: 0px;">
-                <a href="/blog/categories/laravel">
-                  <img src="/assets/img/skills/laravel.png" alt="learn laravel" class=" ls-is-cached lazyloaded">
-                </a>
-              </li> 
-            </ul> 
-          </div> 
+            <div id="div2">
+              <ul id="carousel-slider" class="clearfix" style="width: 2700px;">        
+                <li style="margin-left: -43.89px;">
+                  <a href="/blog/categories/jekyll">
+                    <img src="/assets/img/skills/jekyll.png" alt="learn jekyll" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/docker">
+                    <img src="/assets/img/skills/docker.png" alt="learn docker" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="/blog/categories/javascript">
+                      <img data-src="/assets/img/skills/js.png" alt="learn javascript" class=" lazyloaded" src="/assets/img/skills/js.png">
+                    </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/wordpress"><img src="/assets/img/skills/wp.png" alt="learn wordpress" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/nodejs">
+                    <img src="/assets/img/skills/node.png" alt="learn node" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                  <a href="/blog/categories/gatsby">
+                    <img src="/assets/img/skills/gatsby-logo.png" alt="learn gatsby" class=" ls-is-cached lazyloaded">
+                  </a>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="/blog/categories/react">
+                      <img src="/assets/img/skills/react.png" alt="learn react" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li>
+                  <li style="margin-left: 0px;">
+                    <a href="/blog/categories/mongodb">
+                      <img src="/assets/img/skills/mongodb.png" alt="learn mongodb" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li>
+                  <li style="margin-left: 0px;">
+                    <a href="/blog/categories/laravel">
+                      <img src="/assets/img/skills/laravel.png" alt="learn laravel" class=" ls-is-cached lazyloaded">
+                    </a>
+                  </li> 
+                </ul> 
+            </div>
+            <div id="div3"></div><!--这个容器是用来防止图片滚动时会出现空白的区域-->
+          <!-- </div> 
         </div> 
       </div>
-    </div> -->
+    </div>  --> -->
 
     <!-- <div class="col-lg-12">  
       <div id="carousel"> 
@@ -113,7 +228,7 @@ layout: default
           </div> 
         </div> 
       </div>
-    </div> -->
+    </div>
 
     <div class="col-lg-8 offset-md-2">
       <section id="recent-articles">
@@ -153,4 +268,4 @@ layout: default
           {% endfor %}
         </ul>
       </section>
-    </div>
+    </div> -->
