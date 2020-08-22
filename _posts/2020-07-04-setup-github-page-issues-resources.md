@@ -4,7 +4,7 @@ author: Chaz Lee
 title: How to fix the issues while setting up
 date: 2020-07-04T20:00:20.613Z
 thumbnail: /assets/img/posts/hello.jpg
-categories: Tutorial, htmljscss, nodejs
+categories: tutorial htmljscsss nodejs
 summary: Issues & links to fix them
 ---
 #####  __Guides to set up the pages?__

@@ -4,7 +4,7 @@ author: Chaz Lee
 title: Bug fixing when setting up Django + MySQL cloud
 date: 2020-07-06T08:28:20.613Z
 thumbnail: /assets/img/posts/hello.jpg
-category: Tutorial
+category: tutorial
 summary: Issues & links to fix them
 ---
 #####  __Guides to set up the django?__

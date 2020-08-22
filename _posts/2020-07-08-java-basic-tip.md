@@ -1,11 +1,11 @@
 ---
 layout: post
 author: Chaz Lee
-title: Bug fixing when setting up Django + MySQL cloud
-date: 2020-07-06T08:28:20.613Z
+title: Java Basic Knowlege and Questions
+date: 2020-07-08T08:28:20.613Z
 thumbnail: /assets/img/posts/hello.jpg
-category: Tutorial
-summary: Issues & links to fix them
+categories: java summary
+summary: knowledge summary
 ---
 #####  __Three features of Java?__
 #####   Solution: Polymorphism
@@ -60,6 +60,3 @@ Polymorphism Inheritance Encapsulation Abstraction Class Object Method Message P
 [multi thread](https://juejin.im/entry/58d7635e5c497d0057fae036)
 [compare](https://blog.csdn.net/gatieme/article/details/50908749)
 [volitile/synch diff](https://blog.csdn.net/suifeng3051/article/details/52611233)
-
--11 Android
-[]
