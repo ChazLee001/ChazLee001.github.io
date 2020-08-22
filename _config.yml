@@ -51,14 +51,18 @@ author_work_experiences:
             - company_name: Walmart Labs
               company_logo: walmartlabs.png
               company_url: https://www.walmartlabs.com/
-              designation: Intern REST Service Developer
-              description: Implemented REST Services with Spring Boot and Kotlin
+              designation: Intern Micro Service Developer
+              description: Implemented MVVM Services with Spring Boot, Kotlin and Retrofit2
               visibility: true
             - company_name: Neusoft Medical System
               company_logo: neusoft.png
               company_url: http://www.neusoftmedical.com/en/
               designation: Intern User Client Developer
-              description: Implemented various REST user clients with Java
+              # description: Implemented various REST user clients with Java on Testing
+              description: >-
+                Established test platform, significantly increased correctness by 10% and reduced testing cost by 30% after 2 months living                     
+                Developed RESTful APIs based UI to empower real-time NMR information collect/display saving manual engagement
+
               visibility: true
 
 author_education_details:
@@ -75,16 +79,29 @@ author_education_details:
                 description: Master of Science
                 visibility: true
 
+# author_project_details:
+#               - project_thumbnail: gamershub.png
+#                 project_title: Gamers Hub
+#                 project_description: A Platform built for Gamers and Game Devs
+#                 project_url: https://gamershub.in
+#                 visibility: true
+#               - project_thumbnail: hack4r.PNG
+#                 project_title: Hack4r
+#                 project_description: A Platform built for Hackers and Penetration Testers
+#                 project_url: https://hack4r.com
+#                 visibility: true
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: PeekDemo0821TodoList.gif
+                project_title: Convenient Todo List
+                project_description: A React Application built for Creating Todo List
+                project_url: https://github.com/ChazLee001/ReactTodoList
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: UPCcatalog.gif
+                project_title: Katalog Wizard
+                project_description: A Platform built for Walmart Associates Handle Products easily!
+                project_constribution: 1. Developed cloud MVVM micro-services custom application, RESTful APIs to empower real-time client information scanning, cataloging, label validation, MySQL DB querying using Spring Boot and Kotlin
+                                       2. Released 3 versions, wrote over 7000+ lines code via GitHub in 4 weeks(other weeks on testing/side projects)
+                project_url: https://github.com/ChazLee001/2020InternshipDemo
                 visibility: true
 
 # social links
